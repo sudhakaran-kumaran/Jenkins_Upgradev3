@@ -10,7 +10,6 @@ pipeline {
       stage('Audit tools') {
         steps {
           bat '''
-              git version
               java -version
               mvn -version
           '''
